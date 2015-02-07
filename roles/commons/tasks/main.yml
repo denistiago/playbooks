@@ -1,0 +1,11 @@
+- name: install git
+  apt: pkg=git state=installed
+
+- name: install tig
+  apt: pkg=tig state=installed
+
+- name: install vim
+  apt: pkg=vim state=installed
+
+- name: install ack
+  apt: pkg=ack-grep state=installed
