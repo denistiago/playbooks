@@ -11,6 +11,15 @@ sudo git clone git://github.com/ansible/ansible.git --recursive /usr/local/ansib
 source /usr/local/ansible/hacking/env-setup
 ```
 
+OR
+
+```bash
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install ansible
+```
+
 Run
 ---
 
