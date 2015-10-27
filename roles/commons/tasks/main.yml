@@ -1,11 +1,17 @@
-- name: install git
-  apt: pkg=git state=installed
+- name: add terminator debian repository
+  apt_repository: repo='ppa:gnome-terminator'
 
-- name: install tig
-  apt: pkg=tig state=installed
+- name: add sublime debian repository
+  apt_repository: repo='ppa:webupd8team/sublime-text-3'
 
-- name: install vim
-  apt: pkg=vim state=installed
+- name: update apt cache
+  apt: update_cache=yes
 
-- name: install ack
-  apt: pkg=ack-grep state=installed
+- name: install common dependencies
+  apt: pkg={{item}} state=installed
+  with_items:
+    - tig
+    - vim
+    - ack-grep
+    - terminator
+    - sublime-text-installer

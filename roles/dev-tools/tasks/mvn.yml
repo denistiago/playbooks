@@ -1,0 +1,5 @@
+- name: add terminator debian repository
+  apt_repository: repo='ppa:andrei-pozolotin/maven3'
+
+- name: install maven3
+  apt: pkg=maven3 state=installed update_cache=yes

@@ -1,1 +1,1 @@
-ansible_cache_dir: /var/cache/ansible
+ansible_cache_dir: /home/{{ ansible_ssh_user }}/.ansible/tmp/

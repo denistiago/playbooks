@@ -1,1 +1,2 @@
 - include: gradle.yml
+- include: mvn.yml
