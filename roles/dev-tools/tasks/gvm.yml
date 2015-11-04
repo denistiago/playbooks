@@ -1,0 +1,2 @@
+- name: install sdkman (gvm)
+  shell: curl -s http://get.sdkman.io | bash
